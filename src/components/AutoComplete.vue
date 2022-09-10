@@ -1,5 +1,4 @@
 <script>
-// import beers from 'https://api.punkapi.com/v2/beers' assert { type: "json"};
 import { ref, computed } from "vue";
 
 export default {
@@ -19,7 +18,7 @@ export default {
         })
         .catch((error) => {
           console.log(
-            "Looks like there was a problem fetch the data: \n",
+            "Looks like there was a problem opening the fridge: \n",
             error
           );
         });
@@ -61,7 +60,7 @@ export default {
   <div class="grid bg-gray mt-10">
     <div class="text-larger">
       <div class="mb-3">
-        <label for="search" class="w-full pr-6 text-white h-4"> Looking for your beer? </label>
+        <label for="search" class="w-full pr-6 text-white h-4">Looking for your beer?</label>
       </div>
 
       <div class="absolute items-center pointer-events-auto" style="z-index:1;">
